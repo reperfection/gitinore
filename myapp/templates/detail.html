@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<!-- About-->
+    <section class="content-section bg-light" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <h2>Detail</h2><br><br>
+                        <h4>제목 : {{blog.title}}</h4>
+                        <p>작성일 : {{blog.pub_date}}</P>
+                        <p>내용 : {{blog.body}}</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+{% endblock %}
