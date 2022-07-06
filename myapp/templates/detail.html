@@ -10,6 +10,12 @@
                         <h4>제목 : {{blog.title}}</h4>
                         <p>작성일 : {{blog.pub_date}}</P>
                         <p>내용 : {{blog.body}}</p>
+                        {% if blog.image %}
+                            <img src="{{blog.image.url }}" width = "250" height="250" alt="image">
+                        {% endif %}
+                        <br>
+                        <a href = "{% url 'edit' blog.id %}">수정하기</a>
+                        <a href = "{% url 'delete' blog.id %}">삭제하기</a>
                     </div>
                 </div>
             </div>
